@@ -1,0 +1,63 @@
+.section-bg{
+    background-image: url(Strawberries.jpg);
+}
+li{
+    list-style: none;
+}
+
+.section-padding{
+    position: relative;
+}
+.section-bg::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #31d6be;
+    z-index: -1;
+    opacity: 0.8;
+}
+.section-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background-size: cover;
+    z-index: 2;
+}
+.section-padding .container{
+    position: relative;
+    z-index: 3;
+}
+.contact-form{
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-bottom: 17px;
+    color: #333;
+}
+.contact-form h2{
+    color: #fff;
+}
+input:focus, textarea:focus, button:focus{
+    outline: none;
+}
+.contact-form input:focus, button:focus{
+    border: 1px solid #333;
+}
+.contact-form input[type=submit]{
+    width: auto;
+    padding: 15px 30px;
+    color: #31d6be;
+    font-weight: 700;
+}
+.appointment-text{
+    padding-left: 100px;
+}
